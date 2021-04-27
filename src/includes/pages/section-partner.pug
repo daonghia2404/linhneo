@@ -1,0 +1,8 @@
+section.section.section-partner#partners
+  .container 
+    .section-wrapper 
+      h3.section-des.color-white.text-center My Partners 
+      .owl-carousel#carousel-partners 
+        each item in [1,2,3,4,5]
+          .partner-image 
+            img(src=`./assets/images/image-partner-${item}.png`, alt="")

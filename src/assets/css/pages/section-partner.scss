@@ -1,0 +1,12 @@
+.section-partner {
+  padding: 7rem 0;
+  background: $bg-black;
+  #carousel-partners  {
+    margin-top: 5rem;
+    .partner-image {
+      img {
+        width: auto;
+      }
+    }
+  }
+}

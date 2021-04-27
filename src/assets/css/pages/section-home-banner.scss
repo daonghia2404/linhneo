@@ -1,0 +1,41 @@
+.section-home-banner {
+  .section-wrapper {
+    min-height: 100vh;
+    .section-content {
+      padding: 5rem 0;
+    }
+  }
+  .banner-intro {
+    letter-spacing: 1.2rem;
+    font-size: 3.6rem;
+    text-transform: uppercase;
+    color: $white;
+    font-weight: 700;
+    margin: 3rem 0 4rem;
+    @media (max-width: 575px) {
+      font-size: 2.6rem;
+    }
+  }
+  .banner-title {
+    font-size: 10rem;
+    font-weight: 700;
+    @include textShadowBlue;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.5);;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: $white;
+    margin: 0rem 0 1rem;
+    @media (max-width: 575px) {
+      font-size: 6rem;
+    }
+  }
+  .banner-des {
+    font-weight: bold;
+    font-size: 3.2rem;
+    color: $white;
+    margin: 0 0 4rem;
+    @include textShadowBlack;
+    @media (max-width: 575px) {
+      font-size: 2.2rem;
+    }
+  }
+}

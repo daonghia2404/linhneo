@@ -1,0 +1,35 @@
+@mixin centerImage() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+@mixin ellipsis($line) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box !important;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}
+
+@mixin fullAbsolute {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+@mixin textShadowBlue() {
+  text-shadow: 0 8px 5px rgba(47, 102, 255, 0.5);
+}
+@mixin textShadowBlack() {
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+}

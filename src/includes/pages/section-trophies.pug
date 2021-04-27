@@ -1,0 +1,55 @@
+-
+  const dataTrophiesTimeline = [
+    {
+      date: 'March 2014 — Present',
+      title: 'WAP STUDIO',
+      link: 'greatsimple.ru',
+      des: 'Film Maker',
+    },
+    {
+      date: 'July 2013 — March 2014',
+      title: 'MARVEL STUDIO',
+      link: 'firma.ru',
+      des: 'Art Director',
+    },
+    {
+      date: 'January 2013 – July 2013',
+      title: 'CERTIFIED FREAK',
+      link: 'artlebedev.ru',
+      des: 'Editor',
+    },
+    {
+      date: 'October 2011 – January 2013',
+      title: 'DC ANIMATION',
+      link: 'dribbble.com/greatsimple',
+      des: 'Producer',
+    },
+  ]
+
+section.section.section-trophies#trophies 
+  .container 
+    .section-wrapper 
+      .row 
+        .col-lg-7
+          .trophies-content 
+            h3.section-des My Trophies
+            h1.section-title.color-white Achievement 
+            p.color-white Born and raised in London, Nolan developed an interest in filmmaking from a young age. After studying English literature at University College London, he made his feature debut with Following (1998). Nolan gained international recognition with his second film, Memento (2000),
+
+            .trophies-timeline 
+              each item in dataTrophiesTimeline
+                .timeline-item.d-flex.flex-wrap
+                  .item-line 
+                    .circle 
+                    .line 
+                  .item-date 
+                    p= item.date
+                  .item-title
+                    p= item.title
+                    i= item.link
+                  .item-des 
+                    p= item.des
+
+        .col-lg-5
+          .trophies-image 
+            img(src="./assets/images/image-hero-4.png", alt="")

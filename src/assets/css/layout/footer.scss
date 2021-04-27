@@ -1,0 +1,111 @@
+footer.footer {
+  background: $bg-black;
+  .footer-top {
+    padding: 4rem 0;
+    @media (max-width: 991px) {
+      flex-direction: column;
+    }
+    .footer-logo {
+      width: 100px;
+      img {
+        width: 100%;
+      }
+    }
+    .footer-nav {
+      @media (max-width: 575px) {
+        flex-direction: column;
+        align-items: center;
+      }
+      .nav-item {
+        padding: 1.5rem 2.5rem;
+      }
+      .nav-link {
+        position: relative;
+        transition: 0.3s ease;
+        display: block;
+        color: $white;
+        font-size: 1.8rem;
+        font-weight: 400;
+        padding: 5px 0;
+        &:before {
+          position: absolute;
+          content: '';
+          height: 2px;
+          width: 0;
+          transition: 0.3s ease;
+          background: $white;
+          border-radius: 3px;
+          bottom: 0;
+          left: 0;
+        }
+  
+        &:hover,
+        &.active {
+          &::before {
+            width: 100%;
+          }
+        }
+  
+  
+        &.active {
+          font-weight: 700;
+        }
+      }
+    }
+
+    .footer-social {
+      .social-item {
+        margin-right: 25px;
+        @media (max-width: 991px) {
+          margin: 0 10px;
+        }
+        &.facebook {
+          img {
+            width: 11px;
+          }
+        }
+        &.twitter {
+          img {
+            width: 25px;
+          }
+        }
+        &.instagram {
+          img {
+            width: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    padding: 0.5rem 0 3rem;
+    @media (max-width: 991px) {
+      flex-direction: column;
+      align-items: center !important;
+    }
+    p, a, span {
+      font-size: 1.6rem;
+      color: $text-gray;
+      @media (max-width: 991px) {
+        text-align: center;
+      }
+    }
+    span {
+      display: inline-block;
+      margin: 0 5px;
+    }
+    p {
+      max-width: 500px;
+      @media (max-width: 991px) {
+        max-width: 100%;
+      }
+    }
+    .bottom-item {
+      &:nth-of-type(2) {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}

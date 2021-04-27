@@ -1,0 +1,39 @@
+-
+  const dataNavLink = [
+    {
+      link: '#welcome',
+      title: 'Welcome',
+    },
+    {
+      link: '#aboutme',
+      title: 'About Me',
+    },
+    {
+      link: '#trophies',
+      title: 'Trophies',
+    },
+    {
+      link: '#partners',
+      title: 'Partners',
+    },
+    {
+      link: '#vision',
+      title: 'Vision',
+    },
+  ]
+
+header.header 
+  .container 
+    .header-wrapper.d-flex.align-items-center.justify-content-between 
+      a(href="#welcome").header-logo
+        img(src="./assets/images/logo.svg", alt="")
+      ul.header-nav.d-flex
+        each item in dataNavLink
+          li.nav-item 
+            a(href=`${item.link}`).nav-link= item.title
+      .header-contact.d-flex.align-items-center
+        .btn-menu-mobile 
+          img(src="./assets/icons/icon-bar-white.svg", alt="")
+        include ../components/button.pug
+        +Button({ link: '#contact', title: 'Liên hệ', className: 'radius white-outline' })
+

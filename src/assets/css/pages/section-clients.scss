@@ -1,0 +1,55 @@
+.section-clients {
+  padding: 15rem 0;
+  .clients-wrapper  {
+    margin: 6rem auto 0;
+    #carousel-clients {
+      position: relative;
+      margin: 0 auto;
+      max-width: 80%;
+      @media (max-width: 991px) {
+        max-width: 100%;
+      }
+      .owl-next,
+      .owl-prev {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        img {
+          width: 14px;
+        }
+        @media (max-width: 991px) {
+          display: none;
+        }
+      }
+      .owl-prev {
+        left: calc(-14px * 5);
+      }
+      .owl-next {
+        right: calc(-14px * 5);
+      }
+      .client-item {
+        .client-caption {
+          color: $white;
+          font-size: 3.2rem;
+          font-weight: lighter;
+          margin-bottom: 5rem;
+          strong {
+            font-weight: 700;
+          }
+        }
+        .client-name {
+          font-size: 12px;
+          text-transform: uppercase;
+          color: $white;
+          margin-bottom: 10px;
+          font-weight: 700;
+        }
+        .client-des {
+          font-size: 12px;
+          font-weight: 400;
+          color: $white;
+        }
+      }
+    }
+  }
+}

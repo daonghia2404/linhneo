@@ -1,0 +1,62 @@
+-
+  const dataProjects = [
+    {
+      image: './assets/images/image-project-1.png',
+      filter: 'music',
+    },
+    {
+      image: './assets/images/image-project-2.png',
+      filter: 'music',
+    },
+    {
+      image: './assets/images/image-project-3.png',
+      filter: 'ads entertainment',
+    },
+    {
+      image: './assets/images/image-project-4.png',
+      filter: 'ads',
+    },
+    {
+      image: './assets/images/image-project-5.png',
+      filter: 'entertainment music',
+    },
+    {
+      image: './assets/images/image-project-6.png',
+      filter: 'entertainment',
+    },
+    {
+      image: './assets/images/image-project-7.png',
+      filter: 'entertainment ads',
+    },
+    {
+      image: './assets/images/image-project-8.png',
+      filter: 'music',
+    },
+  ]
+
+section.section.section-project 
+  .container 
+    .section-wrapper 
+      h3.section-des.text-center DỰ ÁN
+      h1.section-title.text-center NHỮNG DỰ ÁN CỦA LINH NEO
+
+      .section-project-wrapper
+        .project-tabs.d-flex.justify-content-center.grid-filter-button-group.flex-wrap
+          .tab-item.active(data-filter="*") PHIM ĐIỆN ẢNH
+          .tab-item(data-filter=".music") ÂM NHẠC
+          .tab-item(data-filter=".ads") QUẢNG CÁO
+          .tab-item(data-filter=".entertainment") GIẢI TRÍ
+
+        .project-tabs-group.grid-filter-wrapper
+          each item in dataProjects
+            .tab-item.grid-filter-item(class=`${item.filter}`)
+              .image-image 
+                img(src=`${item.image}`, alt="")
+                .image-overlay.d-flex.align-items-center.justify-content-center
+                  .overlay-content
+                    h6.project-title Hà Nội Chill
+                    p Big and useful component-based UI Kit
+                    include ../components/button.pug
+                    +Button({ title: 'Xem', className: 'blue radius' })
+
+

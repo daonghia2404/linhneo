@@ -1,0 +1,28 @@
+section.section.section-contact#contact
+  img(src="./assets/images/image-banner-contact.png", alt="").section-bg
+  .section-overlay 
+  .container 
+    .section-wrapper 
+      .contact-logo 
+        img(src="./assets/images/logo.svg", alt="")
+      h1.section-title.text-center.color-white Bắt đầu #[span.color-white thả neo] cùng tôi!
+      p.text-center.color-white Bắt đầu dự án!
+
+      form(action="#").form-contact
+        .form-group.col-3-3-3-3 
+          .form-item 
+            input(type="text" placeholder="Your Name")
+          .form-item 
+            input(type="text" placeholder="Email")
+          .form-item 
+            input(type="password" placeholder="Password")
+          .form-item 
+            include ../components/button.pug
+            +Button({ title: 'Bắt đầu', className: 'purple' })
+        .form-group.justify-content-center
+          .form-item.d-flex.align-items-center.justify-content-center
+            p.mb-0.color-text-gray Or Sign Up with
+            button.login-social.d-flex.facebook
+              img(src="./assets/icons/icon-facebook-white.svg", alt="")
+            button.login-social.d-flex.google
+              img(src="./assets/icons/icon-google-white.svg", alt="")

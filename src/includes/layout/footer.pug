@@ -1,0 +1,30 @@
+
+footer.footer 
+  .container 
+    .footer-top.d-flex.justify-content-between.align-items-center 
+      a(href="#welcome").footer-logo 
+        img(src="./assets/images/logo.svg", alt="")
+      ul.footer-nav.d-flex
+        each item in dataNavLink
+          li.nav-item 
+            a(href=`${item.link}`).nav-link= item.title
+      .footer-social.d-flex.align-items-center 
+        a(href="#").social-item.facebook
+          img(src="./assets/icons/icon-facebook-gray.svg", alt="")
+        a(href="#").social-item.twitter
+          img(src="./assets/icons/icon-twitter-gray.svg", alt="")
+        a(href="#").social-item.instagram
+          img(src="./assets/icons/icon-instagram-gray.svg", alt="")
+      
+  .line
+  .container 
+    .footer-bottom.d-flex.justify-content-between.align-items-start 
+      .bottom-item
+        p WAP All rights reserved
+        p Over 200 000 people are using Baikal  to help themselves work less and forget about annoying stuff. Be the one!
+      .bottom-item 
+        a(href="#") Terms and conditions
+        span /
+        a(href="#") Special
+        span /
+        a(href="#") Privacy policy
