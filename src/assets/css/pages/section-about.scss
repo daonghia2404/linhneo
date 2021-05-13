@@ -32,6 +32,20 @@
     @media (max-width: 991px) {
       padding: 5rem 0;
     }
+    ul {
+      list-style: disc;
+      padding-left: 20px;
+      li {
+        font-size: 1.8rem;
+        padding: 5px 0;
+        line-height: 1.5;
+        font-family: 'Roboto', sans-serif;
+      }
+    }
+    a {
+      color: $blue;
+      font-family: 'Roboto', sans-serif;
+    }
     .about-social {
       margin-top: 6rem;
       .social-link {

@@ -640,6 +640,17 @@ footer.footer {
     @media (max-width: 991px) {
       .section-about .about-content {
         padding: 5rem 0; } }
+    .section-about .about-content ul {
+      list-style: disc;
+      padding-left: 20px; }
+      .section-about .about-content ul li {
+        font-size: 1.8rem;
+        padding: 5px 0;
+        line-height: 1.5;
+        font-family: 'Roboto', sans-serif; }
+    .section-about .about-content a {
+      color: #4743EB;
+      font-family: 'Roboto', sans-serif; }
     .section-about .about-content .about-social {
       margin-top: 6rem; }
       .section-about .about-content .about-social .social-link {
